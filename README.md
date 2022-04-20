@@ -1,56 +1,36 @@
-# m2_embbeded-project
-## Introduction
- The Vehicle Seat Heat Monitoring System is capable of maintaining of heat in the vehicles seats. 
-In European countries, the temperature is very low and any electronic designer should make sure that his equipment should work efficiently in that whether. 
-In our project, the sensor will sense is the driver has been seated or not and if the driver seated then he need to set the temperature accordingly.
- Based on that our controller will set the heater to required temperature. The Heater will generate the heat and a LCD display will show requested the temperature. 
-In our project we have used ATmega328 microcontroller along with temperature sensor, Switches, Heat generator,and LCD diplay,etc.
+# Stepin_EmbeddedC_casestudy
 
-## Features
-- The System will sense is driver or passenger seated or not.
-- Driver or Passenger has the access to modify the temperature in the vehicle.
-- As per Drivers request, Heater will generate the heat accordingly.
-- It is best for European Countries.
-- Low cost and robust system.
-- Modular Approach.
-                    
-                      
 
-## SWOT- Strengths, and Weakness, Opportunities Threats
-### Strengths
-- User Friendly
-- Easy to alter the temperature inside the vehicles.
-- Modular Approach
-- Low cost and Robust system.
+| Build                                                                                                                                                                                                    | Cppcheck                                                                                                                                                                                                         | Codacy                                                                                                                                                                                                                                                                                                 |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+[![Compile-Linux](https://github.com/sandhya0711/m2_embbeded-project/actions/workflows/compile.yml/badge.svg)](https://github.com/sandhya0711/m2_embbeded-project/actions/workflows/compile.yml)
+[![Cppcheck](https://github.com/sandhya0711/m2_embbeded-project/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/sandhya0711/m2_embbeded-project/actions/workflows/c-cpp.yml)
 
-### Weakness
-- Its only applicable for those countries which are having low temperature.
-### Opportunities
-- It can be implemented by having both Heater and AC.
-### Threats
-- Not suitable for average or high temperature places.
+## Output
 
-## 4W's and 1'H
-### **WHAT** : Vehicle seat heating system
-### **WHERE** : Used in Automotives
-### **WHEN** : At low Temperatures
+### When Requirements not met
 
-## Detail requirements
-### High Level Requirements
-| High Level Requirements      | Description |
-| ----------- | ----------- |
-| HLR1      | Microcontroller   |
-| HLR2   | Temperature Sensor|
-| HLR3   | Heat Generation|
-| HLR4   | Display|
-| HLR5   | Software used|
+ Case1: When both the Seat Switch and HeaterSwitch turned off                  
 
-### Low Level Requirements
-| Low Level Requirements      | Description |
-| ----------- | ----------- |
-| HLR1_LLR1    | ATmega328     |
-| HLR2_LLR1   | LM35 and ADC|
-| HLR2_LLR2   | ADC with PWM|
-| HLR4_LLR1   |LCD and LED|
-| HLR5_LLR1   | Code Blocks with AVR GCC compiler |
-| HLR5_LLR2   | SimulIDE |
+![case1](https://user-images.githubusercontent.com/57322769/133645212-f78104c4-b9ea-4b8e-9624-91f78b65f22d.png) 
+
+Case2: When Seat Switch is on and Heater Switch is OFF
+
+![case2](https://user-images.githubusercontent.com/57322769/133645215-214dd3c0-8651-417a-a1f8-a2f83772e531.png)
+
+Case 3: When Seat switch is OFF and Heater Switch is ON
+
+![case3](https://user-images.githubusercontent.com/57322769/133652006-160f6547-dda1-49af-816e-1065d5fb4f5f.png)
+
+Case4: When both the switches are ON
+
+![case4](https://user-images.githubusercontent.com/57322769/133645220-76e9c3ea-f97c-446f-8529-a4bd68d911ea.png) 
+
+### Both Switches ON
+
+| Duty Cycle | Output                              | 
+|------------|-------------------------------------|
+| 20% of cycle      | ![20](https://user-images.githubusercontent.com/57322769/133645222-3ddde51a-e634-4c18-9dd8-ef50cb6a59e2.png) | 
+| 40% of cycle      | ![40](https://user-images.githubusercontent.com/57322769/133645202-3eef8e2d-1bef-427d-b15e-d0aa27fa822f.png) | 
+| 70% of cycle      | ![70](https://user-images.githubusercontent.com/57322769/133645206-9f92c0a2-edae-456c-bcdd-4f7597c6e4aa.png) | 
+| 95% of cycle      |![90](https://user-images.githubusercontent.com/57322769/133645208-51a9b7a5-84e9-442b-99d6-79434a237a15.png) | 
