@@ -1,14 +1,14 @@
 Heat switch ----Seat switch
 
-|Heat switch | sweat switch  |    cycle             |
+|Heat switch|                           | sweat switch  |                                                  |    cycle          |
 
-|  off       |      off      |      led not blink   |
+|  off      |                          |      off      |                                                  |  led not blink   | 
 
-|  off       |      on       |      led not blink   |
+|  off      |                          |      on       |                                                  |  led not blink   |
 
-|  on        |      off      |   led not blink      |
+|  on       |                          |       off     |                                                  |  led not blink   |
 
-|  on        |      on       |     led blink        |
+|  on       |                           |      on       |                                                  |  led blink      |
 ## Output Test cases
 
 ### When Requirements not met
